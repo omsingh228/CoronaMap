@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Map</title>
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- Copied from MapBox site https://www.mapbox.com/install/javascript/cdn-install/ -->
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Copied from MapBox site https://www.mapbox.com/install/javascript/cdn-install/ -->
+    <div id="map"></div>
+</body>
+
+
+<!-- Copied from MapBox site https://www.mapbox.com/install/javascript/cdn-install/ -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script> 
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoib21zaW5naDIyOCIsImEiOiJjbDY2bzMzd28wMWtnM2t0YnFieXFwY3poIn0.ujemRWmcQ4W_I2-8nwtVuA';//Copy accessToken from same page..
+  var map = new mapboxgl.Map({
+    container: 'map',
+    // style: 'mapbox://styles/mapbox/streets-v11' --> //For Light Mode
+    style: 'mapbox://styles/mapbox/dark-v10',   //  -->  Fore Dark Mode
+    zoom:1
+  });
+</script>
+
+
+<script src="index.js"></script>
+</html>
